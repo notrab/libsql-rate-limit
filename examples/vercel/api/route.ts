@@ -1,7 +1,6 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 
-// libsql-rate-limit
-import { rateLimiter, RateLimitResult } from "../../../src";
+import { rateLimiter, RateLimitResult } from "libsql-rate-limit";
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   const identifier = req.headers["x-forwarded-for"];
