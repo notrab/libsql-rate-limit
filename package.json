@@ -1,0 +1,27 @@
+{
+  "name": "libsql-rate-limit",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "peerDependencies": {
+    "@libsql/client": "^0.12.0"
+  },
+  "devDependencies": {
+    "@libsql/client": "^0.12.0",
+    "@types/node": "^22.5.5",
+    "@vercel/node": "^3.2.14",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.2",
+    "vitest": "^2.1.1"
+  }
+}
